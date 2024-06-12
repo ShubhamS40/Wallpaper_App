@@ -196,10 +196,19 @@ class _SearchPageState extends State<SearchPage> {
   TextEditingController searchInput = TextEditingController();
   List<PhotoModel> photos = [];
 
+   void initState(){
+      super.initState();
+      getSearchWallpaper('technology');
+    }
+
+
   getSearchWallpaper(String searchQuery) async {
       setState(() {
       photos.clear(); // Clear the existing photos list
     });
+
+   
+    // final query=searchQuery.isEmpty?"computer":searchQuery; 
     await http.get(
       Uri.parse("https://api.pexels.com/v1/search?query=$searchQuery&per_page=15"),
       headers: {
