@@ -1,5 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:wallpaperapp/category.dart';
 import 'package:wallpaperapp/home.dart';
 import 'package:wallpaperapp/searchpage.dart';
 
@@ -14,7 +15,8 @@ class _BottomNavigateState extends State<BottomNavigate> {
   int selectindex= 0;
   final List<Widget>pages=[
     HomePage(),
-    SearchPage()
+    SearchPage(),
+    Category()
   ];
   @override
   Widget build(BuildContext context) {

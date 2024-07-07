@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:wallpaperapp/bottomnavigation.dart';
+import 'package:wallpaperapp/category.dart';
 import 'package:wallpaperapp/home.dart';
 
 void main() {
@@ -16,8 +17,12 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home:BottomNavigate() ,
+    
+    return SafeArea(
+      child: MaterialApp(
+        debugShowCheckedModeBanner: false,
+        home:BottomNavigate(),
+      ),
     );
   }
 }
