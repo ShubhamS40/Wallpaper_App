@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "805532105859",
+    "project_id": "wlogify",
+    "storage_bucket": "wlogify.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:805532105859:android:d8b508ffe7552c1139efb6",
+        "android_client_info": {
+          "package_name": "com.example.wallpaperapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyALwasdW0EKSImo3h7I8D2Bdl35p8V94RQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
